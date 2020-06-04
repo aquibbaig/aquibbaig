@@ -24,7 +24,7 @@ html, body {
 
 a {
   text-decoration: none;
-  color: var(--text-gray);
+  color: white;
 }
 
 .flex-row {
@@ -39,7 +39,7 @@ ul {
 }
 
 h1 {
-  font-family: Lexend;
+  font-family: Abel;
   font-size: 2.5rem;
 }
 
@@ -75,7 +75,7 @@ canvas {
 /* Nav */
 
 .nav {
-  background: white;
+  background: var(--starbackground);
   padding: 0.2rem;
   height: 0rem;
   min-height: 10vh;
@@ -118,11 +118,11 @@ canvas {
 }
 
 .nav .nav-items .nav-link:hover {
-  background-color: var(--starbackground);
+  background-color: white;
 }
 
 .nav .nav-items .nav-link:hover a{
-  color: var(--white);
+  color: var(--starbackground);
 }
 
 .nav .nav-brand a {
@@ -143,7 +143,7 @@ canvas {
 }
 
 .nav .social i:hover {
-  color: var(--starbackground);
+  color: #B4C7F9;
 }
 
 /* Nav --x */
