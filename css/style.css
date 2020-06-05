@@ -14,7 +14,7 @@ html, body {
   --white: #ffffff;
   --midnight: #104f55;
   --starbackground: #123981;
-
+  --darkbluegradient: linear-gradient(to top, black 0%, black 1%, #123981 100%);
 
   /* theme font families */
   --Abel: 'Abel', cursive;
@@ -46,6 +46,7 @@ h1 {
 h3 {
   font-family: Abel;
   font-size: 1.8rem;
+  color: var(--white);
 }
 
 h2 {
@@ -69,7 +70,17 @@ canvas {
   width: 100%;
   z-index: 1;
 }
+
+span {
+  font-family: Abel;
+  display: block;
+  color: var(--white);
+}
  
+.container {
+  margin: 0 5vw;
+}
+
 /* Global classes -- x */
 
 /* Nav */
@@ -152,7 +163,7 @@ canvas {
 main .site-title {
   background:var(--starbackground);
   background-size: cover;
-  height: 110vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
 }
@@ -185,6 +196,78 @@ main .site-title .btn:hover {
   border: 1px solid var(--white);
   color: var(--white);
 }
+
+/* Projects */
+.projects {
+  background: var(--darkbluegradient);
+  height: 100vh;
+  width: 100%;
+}
+
+.projects-list {
+  padding-top: 6rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 3rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.project-name {
+  text-align: left;
+}
+
+.project-link {
+  padding: 1rem;
+  text-align: right;
+}
+
+.btn-project {
+  padding: .7rem 2rem;
+  background: var(--white);
+  margin: 0.5rem;
+}
+
+.project-description {
+  background: #232528;
+}
+
+.section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .own-prev .owl-nav-prev,
+.owl-nav .own-prev .owl-nav-prev {
+  color: var(--white);
+  background: transparent;
+  font-size: 1rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: var(--white);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  outline: none;
+  background: transparent;
+}
+
+/* Project --x */
 
 /* Floating animation */
 .floating {  
