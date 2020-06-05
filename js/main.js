@@ -12,7 +12,7 @@ $(document).ready(function() {
 $(".owl-carousel").owlCarousel({
   loop: true,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 10000,
   dots: false,
   nav: true,
   navText: [$('.owl-nav-prev'), $('.owl-nav-next')]
