@@ -16,6 +16,7 @@ html, body {
   --starbackground: #123981;
   --darkbluegradient: linear-gradient(to top, black 0%, black 1%, #123981 100%);
   --greyishblack: #232528;
+  --manatee: #99A2AD;
 
   /* theme font families */
   --Abel: 'Abel', cursive;
@@ -235,7 +236,7 @@ main .site-title .btn:hover {
 }
 
 .no-projects-message {
-  color: #99A2AD;
+  color: var(--manatee);
   font-family: Abel;
   padding: 2rem;
 }
@@ -253,6 +254,8 @@ main .site-title .btn:hover {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .project-grid > article {
@@ -268,6 +271,7 @@ main .site-title .btn:hover {
   color: var(--white);
   padding: 2rem;
   font-family: Abel;
+  color: var(--manatee);
 }
 
 .project-head {
@@ -318,6 +322,7 @@ main .site-title .btn:hover {
 .post-description {
   font-family: Abel;
   font-size: 1rem;
+  color: var(--manatee);
 }
 
 .post-content > .post-info {
