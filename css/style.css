@@ -82,6 +82,10 @@ span {
   margin: 0 5vw;
 }
 
+i:hover {
+  color: #B4C7F9;
+}
+
 /* Global classes -- x */
 
 /* Nav */
@@ -271,8 +275,8 @@ main .site-title .btn:hover {
   justify-content: space-between;
 }
 
-.project-head > i {
-  padding: 1rem;
+.project-head > a {
+  padding: 0.9rem;
   font-size: 1.4rem;
   color: var(--white);
 }
