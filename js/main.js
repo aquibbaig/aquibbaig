@@ -6,18 +6,59 @@ $(document).ready(function() {
   $toggleCollapse.click(function() {
     $nav.toggleClass('collapse');
   });
+
+  // Show only 3 projects on
+  // the start.
+  reduceProjects();
+  $('.no-projects-message').hide();
+  $('#search-project').click(searchProjects);
+  $('.btn-projects').click(showAllProjects);
 });
 
-// owl-carousel for blog
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 10000,
-  dots: false,
-  nav: true,
-  navText: [$('.owl-nav-prev'), $('.owl-nav-next')]
-});
+// Projects section handlers.
+// display only 3 projects at the start.
+function reduceProjects() {
+  let index = 0;
+  $(".project").each(function (el, val) {
+    if (index > 2) {
+      $(val).hide();
+    }
+    index++;
+  });
+}
 
+// Introduce more tailored search
+// by tags or type.
+function searchProjects() {
+  let projects = [];
+  const inputText = $(".searchTerm").val();
+  $(".project").each(function (el, val) {
+    if ($(val).attr('name').includes(inputText)) {
+      projects.push(val);
+    }
+  });
+  // Display only those projects who are asked,
+  // else display a message, return early.
+  if (projects.length === 0) {
+    $(".project").each(function (el, val) {
+      $(val).hide();
+    });
+    $('.no-projects-message').show();
+  } else {
+    $(".project").each(function (el, val) {
+      if ($(val).attr('name').includes(inputText)) {
+        $(val).show();
+      } else $(val).hide();
+    });
+  }
+}
+
+// Show all of your projects.
+function showAllProjects() {
+  $(".project").each(function (el, val) {
+    $(val).show();
+  });
+}
 
 // Canvas
 (function () {
