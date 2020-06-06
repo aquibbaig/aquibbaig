@@ -13,6 +13,7 @@ $(document).ready(function() {
   $('.no-projects-message').hide();
   $('#search-project').click(searchProjects);
   $('.btn-projects').click(showAllProjects);
+  getBlogPostReactions();
 });
 
 // Search projects on pressing the enter
@@ -67,6 +68,34 @@ function searchProjects() {
 function showAllProjects() {
   $(".project").each(function (el, val) {
     $(val).show();
+  });
+}
+
+// Get reactions to the blog posts.
+function getBlogPostReactions() {
+  // Post one.
+  fetch('https://dev.to/api/articles/349961?api-key=zNWaK2DuxqiNQw6CNxxEr3Uj', {
+    method: 'GET',
+    headers: {
+      'content-type': 'application/json',
+    }
+  }).then(resp => {
+    return resp.json();
+  }).then(data => {
+    console.log(data);
+    $('.post-one-reactions').html(data.public_reactions_count);
+  });
+  // Post two
+  fetch('https://dev.to/api/articles/349974?api-key=zNWaK2DuxqiNQw6CNxxEr3Uj', {
+    method: 'GET',
+    headers: {
+      'content-type': 'application/json',
+    }
+  }).then(resp => {
+    return resp.json();
+  }).then(data => {
+    console.log(data);
+    $('.post-two-reactions').html(data.public_reactions_count);
   });
 }
 
