@@ -15,6 +15,16 @@ $(document).ready(function() {
   $('.btn-projects').click(showAllProjects);
 });
 
+// Search projects on pressing the enter
+// button as well.
+$(document).on('keypress', function (e) {
+  if ($('.searchTerm').is(':focus')) {
+    if (e.which == 13) {
+      searchProjects();
+    }
+  }
+});
+
 // Projects section handlers.
 // display only 3 projects at the start.
 function reduceProjects() {
