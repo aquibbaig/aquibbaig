@@ -92,6 +92,10 @@ i:hover {
   padding-bottom: 2rem;
 }
 
+img:hover {
+  transform: scale(1.03);
+}
+
 /* Global classes -- x */
 
 /* Nav */
@@ -426,15 +430,42 @@ main .site-title .btn:hover {
   margin: 0;
   font-family: Abel;
   color: white;
+  padding-bottom: 8rem;
 }
 
 .info-text > p {
   margin: 0;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.info-action-buttons {
+  padding: 2rem;
+}
+
+.info-action-buttons > button {
+  border-radius: 0;
+  background: transparent;
+  color: var(--manatee);
+  border: 0.2rem solid var(--manatee);
+  margin-right: 0.5rem;
+}
+
+/* .info-action-buttons > button > a {
+  color: var(--manatee);
+} */
+
+.info-action-buttons > button:hover {
+  border: 0.2rem solid var(--white);
 }
 
 .info-grid {
   display: grid;
   grid-template-columns: 30% 70%;
+}
+
+.profile-img {
+  border-radius: 4rem;
 }
 
 /* Info --x */
