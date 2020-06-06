@@ -501,3 +501,36 @@ main .site-title .btn:hover {
     display: initial;
   }
 }
+
+/* For small screen devices. */
+@media only screen and (max-width: 390px) {
+  .project > img {
+    width: 100%;
+  }
+  .project {
+    width: 90%;
+  }
+}
+
+/* For extra small devices */
+@media only screen and (max-width: 350px) {
+  .project > img {
+    width: 100%;
+  }
+  .project {
+    width: 78%;
+  }
+}
+
+/* For even smaller devices */
+@media only screen and (max-width: 320px) {
+  .project > img {
+    width: 100%;
+  }
+  .project {
+    width: 73%;
+  }
+  .search-wrapper {
+    margin-left: -4.2rem;
+  }
+}
