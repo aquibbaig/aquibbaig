@@ -9,10 +9,12 @@ $(document).ready(function() {
 
   // Show only 3 projects on
   // the start.
+  parseFilterProjectOptions();
   reduceProjects();
   $('.no-projects-message').hide();
   $('#search-project').click(searchProjects);
   $('.btn-projects').click(showAllProjects);
+  $('#filter-project').click(toggleFilterOptions);
   getBlogPostReactions();
 });
 
@@ -82,7 +84,6 @@ function getBlogPostReactions() {
   }).then(resp => {
     return resp.json();
   }).then(data => {
-    console.log(data);
     $('.post-one-reactions').html(data.public_reactions_count);
   });
   // Post two
@@ -94,8 +95,61 @@ function getBlogPostReactions() {
   }).then(resp => {
     return resp.json();
   }).then(data => {
-    console.log(data);
     $('.post-two-reactions').html(data.public_reactions_count);
+  });
+}
+
+// Toggles on click of the filter menu
+// in the projects section.
+function toggleFilterOptions() {
+  if ($('.filter-content').css('display') === "none") {
+    $(".filter-content").show();
+    Object.keys($('.filter-content').children()).forEach(key => {
+      let val = $('.filter-content').children()[key];
+      if ($(val).prop('nodeName') == 'A') {
+        $(val).on('click', filterProjects);
+      }
+    });
+  } else $(".filter-content").hide();
+}
+
+function parseFilterProjectOptions() {
+  let allTagValues = [];
+  $('.project').each(function (el, val) {
+    $(val).attr('tags').split(" ").forEach(function (tag) {
+      allTagValues.push(tag);
+    });
+  });
+  const removeDuplicates = (arr) => arr.filter((v,i) => arr.indexOf(v) === i);
+  const tags = removeDuplicates(allTagValues);
+  tags.forEach(tag => {
+    let anchor = document.createElement('a');
+    anchor.setAttribute('id', tag);
+    anchor.setAttribute('style', 'cursor: pointer');
+    // anchor.setAttribute('href', '');
+    $(anchor).html(tag);
+    $('.filter-content').append(anchor);
+  });
+}
+
+// Filters projects based on selections.
+function filterProjects(e) {
+  e.preventDefault();
+  let selectedTag = e.target.attributes['id'].value;
+  let present;
+  $('.project').each(function (el, val) {
+    present = "false";
+    // Go through each tag for a project to find similarities.
+    $(val).attr('tags').split(" ").forEach(function (tag) {
+      if (tag === selectedTag) {
+        present = "true";
+        $(val).show();
+      }
+    });
+    if (present == "false") {
+      console.log(val);
+      $(val).hide();
+    }
   });
 }
 
