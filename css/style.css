@@ -189,7 +189,7 @@ main .site-title {
 }
 
 .site-brand-text {
-  margin: 20vh;
+  margin-top: 20vh;
   position: absolute;
   text-align: center;
   width: 100%;
