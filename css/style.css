@@ -335,8 +335,7 @@ main .site-title .btn:hover {
 .site-content {
   display: grid;
   color: var(--white);
-  margin: 0 5rem 0 5rem;
-  padding-top: 4rem;
+  padding: 5rem;
 }
 
 .post-content {
@@ -508,17 +507,35 @@ main .site-title .btn:hover {
     width: 100%;
   }
   .project {
-    width: 90%;
+    width: 94%;
+  }
+  .search-wrapper {
+    margin-left: -4.7rem;
+  }
+  .search {
+    width: 60vw;
+  }
+  .searchTerm {
+    font-size: 0.9rem;
   }
 }
 
 /* For extra small devices */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 370px) {
   .project > img {
     width: 100%;
   }
   .project {
-    width: 78%;
+    width: 85%;
+  }
+  .site-content {
+    padding: 3rem;
+  }
+  .search {
+    width: 50vw;
+  }
+  .searchTerm {
+    font-size: 0.6rem;
   }
 }
 
@@ -528,9 +545,18 @@ main .site-title .btn:hover {
     width: 100%;
   }
   .project {
-    width: 73%;
+    width: 74%;
   }
   .search-wrapper {
-    margin-left: -4.2rem;
+    margin-left: -4.7rem;
+  }
+  .site-content {
+    padding: 3rem;
+  }
+  .search {
+    width: 50vw;
+  }
+  .searchTerm {
+    font-size: 0.6rem;
   }
 }
