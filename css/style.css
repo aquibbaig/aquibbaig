@@ -332,6 +332,7 @@ main .site-title .btn:hover {
   display: grid;
   color: var(--white);
   margin: 0 5rem 0 5rem;
+  padding-top: 4rem;
 }
 
 .post-content {
@@ -368,6 +369,7 @@ main .site-title .btn:hover {
   position: relative;
   background: var(--starbackground);
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 /* Sidebar */
@@ -386,6 +388,56 @@ main .site-title .btn:hover {
 /* Sidebar --x */
 
 /* Blog posts --x */
+
+/* Achievements */
+.achievements {
+  background: black;
+  font-family: Abel;
+  color: var(--manatee);
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+}
+
+.achievement {
+  padding-bottom: 3rem;
+}
+
+.achievement-text {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.achievement-reference {
+  color: var(--starbackground);
+  font-size: 1rem;
+}
+
+.achievement-description {
+  padding-left: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Achievements */
+
+/* Info */
+
+.info {
+  background: black;
+  margin: 0;
+  font-family: Abel;
+  color: white;
+}
+
+.info-text > p {
+  margin: 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+/* Info --x */
 
 /* Floating animation */
 .floating {  
