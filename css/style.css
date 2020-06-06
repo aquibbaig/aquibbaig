@@ -87,6 +87,11 @@ i:hover {
   color: #B4C7F9;
 }
 
+.section-header > span {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
 /* Global classes -- x */
 
 /* Nav */
@@ -224,6 +229,7 @@ main .site-title .btn:hover {
   height: 20px;
   outline: none;
   color: var(--greyishblack);
+  font-size: 0.8rem;
 }
 
 .searchButton {
@@ -316,7 +322,7 @@ main .site-title .btn:hover {
 .btn-projects {
   position: relative;
   background: var(--starbackground);
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 /* Projects --x */

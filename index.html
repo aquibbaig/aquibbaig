@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aquib Baig | Redhat</title>
+  <title>Aquib Baig | Programmer</title>
 
   <!-- Fontawesome icons -->
   <link rel="stylesheet" href="./css/all.min.css">
@@ -26,13 +26,13 @@
       <div>
         <ul class="nav-items">
           <li class="nav-link">
-            <a href="#">Projects</a>
+            <a href="#projects" class="scroll">Projects</a>
           </li>
           <li class="nav-link">
-            <a href="#">BlogPosts</a>
+            <a href="#posts" class="scroll">BlogPosts</a>
           </li>
           <li class="nav-link">
-            <a href="#">Info</a>
+            <a href="#info" class="scroll">Info</a>
           </li>
         </ul>
       </div>
@@ -51,14 +51,16 @@
             <h1>Hi,</h1>
             <h1>I'm Aquib Baig.</h1>
             <h3>I write code.</h3>
-            <button class="btn">Explore</button>
+            <a href="#projects" class="scroll">
+              <button class="btn">Explore</button>
+            </a>
           </div>
         <canvas class="site-background" id="bgCanvas">
         </canvas>
       </section>
     <!-- Site title ---x -->
     <!-- Projects section -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <div class="search-wrapper">
             <center>
@@ -165,8 +167,14 @@
     <!-- Projects -->
 
     <!-- Blog Posts -->
-    <section style="background: black">
+    <section style="background: black" id="posts">
       <div class="site-content" class="container">
+        <div class="section-header">
+          <span>
+            <img src="./assets/articles.png"/>
+            <a>Articles</a>
+          </span>
+        </div>
         <div class="posts">
           <!-- Blog post one -->
           <div class="post-content">
