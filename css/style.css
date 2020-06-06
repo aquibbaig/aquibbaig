@@ -80,7 +80,8 @@ span {
 }
  
 .container {
-  margin: 0 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 i:hover {
@@ -128,7 +129,7 @@ img:hover {
 }
 
 .collapse {
-  height: 20rem;
+  height: 30rem;
 }
 
 .nav .nav-items {
@@ -284,7 +285,7 @@ main .site-title .btn:hover {
 /* Projects */
 .projects {
   background: var(--darkbluegradient);
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .project-grid {
@@ -327,6 +328,10 @@ main .site-title .btn:hover {
   position: relative;
   background: var(--starbackground);
   margin-bottom: 6rem;
+}
+
+.project {
+  padding: 3rem;
 }
 
 /* Projects --x */
@@ -440,6 +445,7 @@ main .site-title .btn:hover {
 
 .info-action-buttons {
   padding: 2rem;
+  display: flex;
 }
 
 .info-action-buttons > button {
@@ -449,10 +455,6 @@ main .site-title .btn:hover {
   border: 0.2rem solid var(--manatee);
   margin-right: 0.5rem;
 }
-
-/* .info-action-buttons > button > a {
-  color: var(--manatee);
-} */
 
 .info-action-buttons > button:hover {
   border: 0.2rem solid var(--white);
@@ -501,62 +503,58 @@ main .site-title .btn:hover {
   }
 }
 
-/* For small screen devices. */
-@media only screen and (max-width: 390px) {
-  .project > img {
-    width: 100%;
-  }
-  .project {
-    width: 94%;
-  }
-  .search-wrapper {
-    margin-left: -4.7rem;
+/* Viewport <= 600 */
+@media only screen and (max-width: 600px) {
+  .site-content {
+    padding: 2rem;
   }
   .search {
+    margin-left: -1.8rem;
     width: 60vw;
   }
   .searchTerm {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
+  }
+  .info-grid {
+    display: block;
+    justify-content: center;
+  }
+  .profile-img {
+    max-width: 200px;
+    max-height: 250px;
+  }
+  .post-title > a {
+    font-size: 1.4rem;
+  }
+  .post-description > p{
+    font-size: 1.0rem;
+  }
+  .achievement-text {
+    font-size: 1.4rem;
+  }
+  
+  .achievement-reference {
+    font-size: 1rem;
+  }
+  
+  .achievement-description {
+    font-size: 1.0rem;
+  }
+
+  .info-text > p {
+    font-size: 1.0rem;
+    text-align: justify;
+  }
+  .project-text {
+    font-size: 1.3rem;
+  }
+  .info-action-buttons > button > a {
+    font-size: 0.8rem;
   }
 }
 
-/* For extra small devices */
-@media only screen and (max-width: 370px) {
-  .project > img {
-    width: 100%;
-  }
+@media only screen and (max-width: 330px) {
   .project {
-    width: 85%;
-  }
-  .site-content {
-    padding: 3rem;
-  }
-  .search {
-    width: 50vw;
-  }
-  .searchTerm {
-    font-size: 0.6rem;
-  }
-}
-
-/* For even smaller devices */
-@media only screen and (max-width: 320px) {
-  .project > img {
-    width: 100%;
-  }
-  .project {
-    width: 74%;
-  }
-  .search-wrapper {
-    margin-left: -4.7rem;
-  }
-  .site-content {
-    padding: 3rem;
-  }
-  .search {
-    width: 50vw;
-  }
-  .searchTerm {
-    font-size: 0.6rem;
+    margin-left: -2rem;
   }
 }

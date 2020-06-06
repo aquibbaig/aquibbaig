@@ -203,7 +203,7 @@ bgCtx.fillRect(0, 0, width, height);
 
 // stars
 function Star(options) {
-  this.size = Math.random() * 2;
+  this.size = Math.random() * 2.8 ;
   this.speed = Math.random() * .05;
   this.x = options.x;
   this.y = options.y;
@@ -233,7 +233,7 @@ ShootingStar.prototype.reset = function () {
   this.x = Math.random() * width;
   this.y = 0;
   this.len = (Math.random() * 80) + 10;
-  this.speed = (Math.random() * 10) + 6;
+  this.speed = (Math.random() * 5) + 6;
   this.size = (Math.random() * 1) + 0.1;
   // this is used so the shooting stars arent constant
   this.waitTime = new Date().getTime() + (Math.random() * 3000) + 500;
@@ -264,6 +264,7 @@ var entities = [];
 
 // init the stars
 for (var i = 0; i < height; i++) {
+  console.log(height, width);
   entities.push(new Star({
       x: Math.random() * width,
       y: Math.random() * height
