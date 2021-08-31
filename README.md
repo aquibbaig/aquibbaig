@@ -2,20 +2,7 @@
 
 <p>Welcome to my Github! </br> I'm a fullstack developer from <img src="https://image.flaticon.com/icons/svg/3157/3157754.svg" width="13"/> <b> India</b>. </p>
 
-<h3>I do random things. Mostly I code with</h3>
-<p>
-  <img alt="React" src="https://img.shields.io/badge/-React-60bafb?style=flat-square&logo=react&logoColor=white" />
-  <img alt="Golang" src="https://img.shields.io/badge/-Golang-00add8?style=flat-square&logo=Go&logoColor=white" />
-  <img alt="Flutter" src="https://img.shields.io/badge/-Flutter-2088FF?style=flat-square&logo=Flutter&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="redux" src="https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="RabbitMQ" src="https://img.shields.io/badge/-RabbitMQ-ff6600?style=flat-square&logo=RabbitMQ&logoColor=white" />
-  <img alt="Redis" src="https://img.shields.io/badge/-Redis-dc382d?style=flat-square&logo=angular&logoColor=white" />
-  <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" />
-  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
-  <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-8dd6f9?style=flat-square&logo=Webpack&logoColor=white" />
-</p>
+<h3>Building tools for humans to use</h3>
 
 <h3>Open SourceProjects</h3>
 
@@ -66,9 +53,6 @@
   </a>
   <a href="https://www.linkedin.com/in/baigaquib/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://dev.to/aquibbaig" target="_blank">
-    <img alt="Medium" src="https://img.shields.io/badge/Dev.to-00529B.svg?&style=for-the-badge&logo=dev.to&logoColor=white" />
   </a>
 </p>
 
