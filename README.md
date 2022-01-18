@@ -1,6 +1,6 @@
 <h2><img src="https://emojis.slackmojis.com/emojis/images/1501264193/2696/nyan-whale-offerzen.png?1501264193" width="30"/> Hi, </h2>
 
-<p>Welcome to my Github! </br> I'm a fullstack developer from <img src="https://image.flaticon.com/icons/svg/3157/3157754.svg" width="13"/> <b> India</b>. </p>
+<p>Welcome to my Github! </br> I'm a fullstack developer from <b> India</b>. </p>
 
 <h3>Building tools for humans to use</h3>
 
